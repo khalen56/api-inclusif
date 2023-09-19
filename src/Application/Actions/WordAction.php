@@ -22,7 +22,7 @@ class WordAction extends Action
         $res = $client->post('https://eninclusif.fr/recherche', [
             RequestOptions::JSON => [
                 'mot' => $word,
-                'token' => base64_encode(date('Y-m-d-H'))
+                'token' => base64_encode(date('Y-m-d-G'))
             ]
         ]);
 
